@@ -1,0 +1,52 @@
+﻿@page "/"
+
+<link href="css/app.css" rel="stylesheet" />
+<script src="js/site.js"></script>
+
+<header>
+    <h1>Murilo Fernandes Vaz</h1>
+    <p class="subtitle">Desenvolvedor Full-Stack</p>
+</header>
+
+<nav>
+    <button @onclick='() => ScrollToSection("projetos")'>PROJETOS</button>
+    <button @onclick='() => ScrollToSection("tecnologias")'>TECNOLOGIAS</button>
+    <button @onclick='() => ScrollToSection("contato")'>CONTATO</button>
+    <button @onclick='() => ScrollToSection("sobremim")'>SOBRE MIM</button>
+</nav>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <p>Em breve...</p>
+</section>
+<section id="tecnologias">
+    <h2>Tecnologias</h2>
+    <p>Em breve...</p>
+</section>
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Em breve...</p>
+</section>
+<section id="sobremim">
+    <h2>Sobre Mim</h2>
+    <p>Em breve...</p>
+</section>
+
+<footer>
+    <a href="https://https://www.linkedin.com/in/murilofernandesdev/" target="_blank">
+        <img src="assets/linkedinmarrom.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://https://github.com/murilofernandes1" target="_blank">
+        <img src="assets/gitmarrom.svg" alt="GitHub" />
+    </a>
+
+</footer>
+
+@inject IJSRuntime JS
+@code{
+    private async Task ScrollToSection(string sectionId)
+    {
+        await JS.InvokeVoidAsync("scrollToSection", sectionId);
+    }
+
+}

@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    font-family: 'Segoe Ui', sans-serif;
+    background-color: #FAEBD7;;
+    color: #3F2818;
+    scroll-behavior: smooth;
+}
+
+header{
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+h1{
+    font-size: 2.5em;
+    color: #7B4835;
+    margin-bottom: 10px;
+}
+.subtitle{
+    color: #7B4835;
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav{ 
+    text-align: center;
+    margin-bottom: 30px;
+}
+nav button {
+    background-color: #3F2818;
+    border: 2px;
+    color: #f5f5dc;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 1 rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #7B4835;
+    transform: scale(1.05);
+}
+section{
+    padding: 60px 20px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer img {
+    width: 32px;
+    margin: 0 12px;
+    transition: transform 0.3s;
+    filter: brightness(0) invert(1);
+}
+footer img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #7B4835);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

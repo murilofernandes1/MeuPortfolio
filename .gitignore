@@ -1,0 +1,9 @@
+bin/
+obj/
+*.user
+*.suo
+*.csproj.user
+.vscode/
+.env
+wwwroot/*.db
+wwwroot/*.log
