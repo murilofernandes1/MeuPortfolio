@@ -12,10 +12,6 @@
     <link href="MeuPortfolio.styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&family=Smooch&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,6 +24,15 @@
     
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="js/site.js"></script>"
+    <script>
+        window.scrollToTop = () =>
+        {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
 </body>
 
 </html>

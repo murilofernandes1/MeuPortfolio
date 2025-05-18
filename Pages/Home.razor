@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime JS
 
 <link href="css/app.css" rel="stylesheet" />
 <script src="js/site.js"></script>
@@ -15,32 +16,60 @@
     <button @onclick='() => ScrollToSection("sobremim")'>SOBRE MIM</button>
 </nav>
 
+
+
+
 <section id="projetos">
     <h2>Projetos</h2>
-    <p>Em breve...</p>
+
+   
+        <div id="projeto">
+            <h3 style="padding-top: 50px">ReciclApp</h3>
+            <p>ReciclApp é um aplicativo que foi pensado para ser usado em escolas, e incentivar a reciclagem entre os alunos de maneira lúdica. No aplicativo constam funcionalidades como: Criação de equipes, pontuação de acordo com o material reciclado e o nível que ele afeta o meio ambiente e um ranking com as equipes que mais reciclaram. Para seu desenvolvimento foi usado o Expo, juntamente com TypeScript e Javascript.</p>
+            <a href="reciclalogo.png" target="_blank">
+                <img src="assets/reciclalogo.png" alt="Projeto 1" style="width:200px; height:200px" />
+            </a>
+        </div>
+    
+
+    
+        <div id="projeto">
+            <h3 style="padding-top: 50px">Meu Portfólio</h3>
+            <p>Este Portfólio é meu primeiro projeto no desenvolvimento Web, nele constam informações sobre mim, meus projetos e meios de contato. Nesse projeto usei Blazor, HTML e CSS.</p>
+            <a href="portfolio.png" target="_blank">
+                <img src="assets/portfolio.png" alt="Projeto 1" style="width:500px; height:250px" />
+            </a>
+        </div>
+    
+
+
 </section>
 <section id="tecnologias">
     <h2>Tecnologias</h2>
     <p>Em breve...</p>
+
 </section>
+
 <section id="contato">
     <h2>Contato</h2>
-    <p>Em breve...</p>
+    <a href="https://www.linkedin.com/in/murilofernandesdev/" target="_blank">
+        <img src="assets/linkedinmarrom.svg" alt="LinkedIn" style="width:100px; height:100px; padding-top: 30px" />
+    </a>
+    <a href="https://github.com/murilofernandes1" target="_blank">
+        <img src="assets/gitmarrom.svg" alt="GitHub" style="width:90px; height:90px; padding-top: 30px" />
+    </a>
 </section>
+
 <section id="sobremim">
     <h2>Sobre Mim</h2>
-    <p>Em breve...</p>
+    <p>Estudo programação a cerca de dois anos, comecei meus estudos com C# no final de 2023 e de lá pra cá me aprofundei em outras diversas tecnologias. Já me aventurei no desenvolvimento Mobile para um trabalho da faculdade e atualmente estou focando em tecnologias como o Blazor para Desenvolvimento Web. Sempre estou estudando algo novo, porém reforçando o conhecimento que já tenho.</p>
 </section>
 
 <footer>
-    <a href="https://https://www.linkedin.com/in/murilofernandesdev/" target="_blank">
-        <img src="assets/linkedinmarrom.svg" alt="LinkedIn" />
-    </a>
-    <a href="https://https://github.com/murilofernandes1" target="_blank">
-        <img src="assets/gitmarrom.svg" alt="GitHub" />
-    </a>
-
+    <p>Desenvolvido por Murilo Fernandes Vaz</p>
+    <button style="button" @onclick='ScrollToTop'>VOLTAR AO TOPO</button>
 </footer>
+
 
 @inject IJSRuntime JS
 @code{
@@ -49,4 +78,13 @@
         await JS.InvokeVoidAsync("scrollToSection", sectionId);
     }
 
+    private async Task ScrollToTop()
+    {
+        await JS.InvokeVoidAsync("window.scrollTo", 0, 0);
+    }
+}
+
+@code {
+    private bool showButton = false;
+    
 }

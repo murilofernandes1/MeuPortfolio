@@ -2,7 +2,7 @@ body{
     margin:0;
     font-family: 'Segoe Ui', sans-serif;
     background-color: #FAEBD7;;
-    color: #3F2818;
+    color: #7B4835;
     scroll-behavior: smooth;
 }
 
@@ -15,6 +15,14 @@ h1{
     color: #7B4835;
     margin-bottom: 10px;
 }
+h2:hover{
+    color:#FAEBD7;
+    background-color: #3F2818;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
 .subtitle{
     color: #7B4835;
     font-size: 1.2em;
@@ -26,7 +34,7 @@ nav{
     margin-bottom: 30px;
 }
 nav button {
-    background-color: #3F2818;
+    background-color: #7B4835;
     border: 2px;
     color: #f5f5dc;
     padding: 12px 24px;
@@ -35,30 +43,52 @@ nav button {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 150px;
+    height: 50px;
 }
-
 nav button:hover {
-    background-color: #7B4835;
+    background-color: #3F2818;
     transform: scale(1.05);
 }
 section{
     padding: 60px 20px;
     text-align: center;
 }
+#projeto{
+    background-color: #FAEBD7;
+    color: #7B4835;
+    padding: 50px;
+    margin: 50px 0;
+    border-radius: 8px;
+}
+#projeto:hover{
+    background-color: #3F2818;
+    color: #FAEBD7;
+    transform: scale(1.05);
+}
+#sobremim {
+    padding-top: 50x;
+    padding: 50px;
+}
 footer {
     text-align: center;
     padding: 20px;
 }
-footer img {
-    width: 32px;
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #7B4835;
+    color: #f5f5dc;
+    border: 2px;    
     margin: 0 12px;
     transition: transform 0.3s;
-    filter: brightness(0) invert(1);
+    
 }
-footer img:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 5px #7B4835);
-}
+button:hover {
+    background-color: #3F2818;
+    transform: scale(1.05);
+}  
+
 @keyframes fadeIn {
     from {
         opacity: 0;
