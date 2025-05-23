@@ -15,14 +15,14 @@ h1{
     color: #7B4835;
     margin-bottom: 10px;
 }
-h2:hover{
-    color:#FAEBD7;
-    background-color: #3F2818;
-    width: 100%;
-    padding: 10px;
-    
-    
+h2 {
+    background-color: #7B4835;
+    color:#f5f5dc;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
 }
+
 .subtitle{
     color: #7B4835;
     font-size: 1.2em;
@@ -54,21 +54,26 @@ section{
     padding: 60px 20px;
     text-align: center;
 }
-#projeto{
+
+section > h2 {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    display: block;
+}
+#projetos{
     background-color: #FAEBD7;
     color: #7B4835;
     padding: 50px;
     margin: 50px 0;
     border-radius: 8px;
 }
-#projeto:hover{
-    background-color: #3F2818;
-    color: #FAEBD7;
-    transform: scale(1.05);
-}
 #sobremim {
     padding-top: 50x;
     padding: 50px;
+    padding-bottom: 20px;
+    
 }
 footer {
     text-align: center;
@@ -88,7 +93,29 @@ button:hover {
     background-color: #3F2818;
     transform: scale(1.05);
 }  
-
+.tecnologias-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-top: 30px;
+        justify-content: center;
+    }
+    .tecnologia-item {
+        transition: transform 0.2s;
+        border-radius: 16px;
+        padding: 12px;
+        cursor: pointer;
+    }
+    .tecnologia-item img {
+        width: 80px;
+        height: 80px;
+        transition: filter 0.3s, transform 0.3s;
+        filter: grayscale(60%) brightness(0.8);
+    }
+    .tecnologia-item:hover img {
+        filter: none;
+        transform: scale(1.12) rotate(-3deg);
+    }
 @keyframes fadeIn {
     from {
         opacity: 0;
