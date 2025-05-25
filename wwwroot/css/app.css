@@ -23,7 +23,7 @@ body {
 .modern-header {
     text-align: center;
     padding: 3rem 1rem 1.5rem 1rem;
-    background: linear-gradient(90deg, #181622 60%, var(--main-purple) 100%);
+    background: var(--card-bg);
     border-bottom: 2px solid var(--main-purple);
     box-shadow: var(--shadow);
 }
