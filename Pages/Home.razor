@@ -4,105 +4,77 @@
 <link href="css/app.css" rel="stylesheet" />
 <script src="js/site.js"></script>
 
-<header>
+<header class="modern-header">
     <h1>Murilo Fernandes Vaz</h1>
     <p class="subtitle">Desenvolvedor Full-Stack</p>
 </header>
 
-<nav>
-    <button @onclick='() => ScrollToSection("projetos")'>PROJETOS</button>
-    <button @onclick='() => ScrollToSection("tecnologias")'>TECNOLOGIAS</button>
-    <button @onclick='() => ScrollToSection("contato")'>CONTATO</button>
-    <button @onclick='() => ScrollToSection("sobremim")'>SOBRE MIM</button>
+<nav class="nav-modern">
+    <button @onclick='() => ScrollToSection("projetos")'>Projetos</button>
+    <button @onclick='() => ScrollToSection("tecnologias")'>Tecnologias</button>
+    <button @onclick='() => ScrollToSection("contato")'>Contato</button>
+    <button @onclick='() => ScrollToSection("sobremim")'>Sobre Mim</button>
 </nav>
 
+<main>
+    <section id="projetos" class="modern-section">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <img src="assets/reciclalogo.png" alt="ReciclApp" width="120" height="120" />
+            <div>
+                <h3>ReciclApp</h3>
+                <p>App para escolas incentivarem reciclagem. Feito com Expo, TypeScript e Javascript.</p>
+            </div>
+        </div>
+        <div class="projeto">
+            <img src="assets/portfolio.png" alt="Portfólio" width="200" height="80" />
+            <div>
+                <h3>Meu Portfólio</h3>
+                <p>Primeiro projeto web usando Blazor, HTML e CSS.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="tecnologias" class="modern-section">
+        <h2>Tecnologias</h2>
+        <div class="tecnologias-icons">
+            <img src="assets/logos/csharp.svg" alt="C#" />
+            <img src="assets/logos/blazor.svg" alt="Blazor" />
+            <img src="assets/logos/html5.svg" alt="HTML5" />
+            <img src="assets/logos/css3.svg" alt="CSS3" />
+            <img src="assets/logos/javascript.svg" alt="JavaScript" />
+            <img src="assets/logos/typescript.svg" alt="TypeScript" />
+            <img src="assets/logos/expo.svg" alt="Expo" />
+        </div>
+    </section>
 
-
-<section id="projetos">
-    <h2>PROJETOS</h2>
-
-   
-        <div id="projeto">
-            <h3 style="padding-top: 50px">ReciclApp</h3>
-            <p>ReciclApp é um aplicativo que foi pensado para ser usado em escolas, e incentivar a reciclagem entre os alunos de maneira lúdica. No aplicativo constam funcionalidades como: Criação de equipes, pontuação de acordo com o material reciclado e o nível que ele afeta o meio ambiente e um ranking com as equipes que mais reciclaram. Para seu desenvolvimento foi usado o Expo, juntamente com TypeScript e Javascript.</p>
-            <a href="reciclalogo.png" target="_blank">
-                <img src="assets/reciclalogo.png" alt="Projeto 1" style="width:200px; height:200px" />
+    <section id="contato" class="modern-section">
+        <h2>Contato</h2>
+        <div class="contato-icons">
+            <a href="https://www.linkedin.com/in/murilofernandesdev/" target="_blank" title="LinkedIn">
+                <img src="assets/linkedinmarrom.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/murilofernandes1" target="_blank" title="GitHub">
+                <img src="assets/gitmarrom.svg" alt="GitHub" />
+            </a>
+            <a href="mailto:murilo.vaz.dev@gmail.com" title="Email">
+                <img src="assets/email.svg" alt="Email" />
             </a>
         </div>
-    
+    </section>
 
-    
-        <div id="projeto">
-            <h3 style="padding-top: 50px">Meu Portfólio</h3>
-            <p>Este Portfólio é meu primeiro projeto no desenvolvimento Web, nele constam informações sobre mim, meus projetos e meios de contato. Nesse projeto usei Blazor, HTML e CSS.</p>
-            <a href="portfolio.png" target="_blank">
-                <img src="assets/portfolio.png" alt="Projeto 1" style="width:600px; height: 250px" />
-            </a>
-        </div>
-    
-
-
-</section>
-<section id="tecnologias">
-    <h2>TECNOLOGIAS</h2>
-    <div class="tecnologias-icons">
-        <div class="tecnologia-item">
-            <img src="assets/csharp.svg" alt="C#" title="C#" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/blazor.svg" alt="Blazor" title="Blazor" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/html5.svg" alt="HTML5" title="HTML5" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/css3.svg" alt="CSS3" title="CSS3" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/javascript.svg" alt="JavaScript" title="JavaScript" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/typescript.svg" alt="TypeScript" title="TypeScript" />
-        </div>
-        <div class="tecnologia-item">
-            <img src="assets/expo.svg" alt="Expo" title="Expo" />
-        </div>
-    </div>
-
-    
-
-</section>
-
-<section id="contato">
-    <h2>CONTATO</h2>
-    <div class="contato-icons" style="display: flex; gap: 40px; justify-content: center; align-items: center; padding-top: 30px;">
-        <a href="https://www.linkedin.com/in/murilofernandesdev/" target="_blank" title="LinkedIn" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-            <img src="assets/linkedinmarrom.svg" alt="LinkedIn" style="width:60px; height:60px;" />
-            <span style="margin-top: 8px;">LinkedIn</span>
-        </a>
-        <a href="https://github.com/murilofernandes1" target="_blank" title="GitHub" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-            <img src="assets/gitmarrom.svg" alt="GitHub" style="width:60px; height:60px;" />
-            <span style="margin-top: 8px;">GitHub</span>
-        </a>
-        <a href="mailto:murilo.vaz.dev@gmail.com" title="Email" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-            <img src="assets/email.svg" alt="Email" style="width:60px; height:60px;" />
-            <span style="margin-top: 8px;">Email</span>
-        </a>
-    </div>
-</section>
-
-<section id="sobremim">
-    <h2>SOBRE MIM</h2>
-    <p style="padding-top: 20px">Estudo programação a cerca de dois anos, comecei meus estudos com C# no final de 2023 e de lá pra cá me aprofundei em outras diversas tecnologias. Já me aventurei no desenvolvimento Mobile para um trabalho da faculdade e atualmente estou focando em tecnologias como o Blazor para Desenvolvimento Web. Sempre estou estudando algo novo, porém reforçando o conhecimento que já tenho. No momento estou trabalhando com projetos pessoais para botar em prática meus estudos, enquanto procuro minha primeira oportunidade na área.</p>
-</section>
+    <section id="sobremim" class="modern-section sobremim-section">
+        <h2>Sobre Mim</h2>
+        <p>
+          Estudo programação a cerca de dois anos, comecei meus estudos com C# no final de 2023 e de lá pra cá me aprofundei em outras diversas tecnologias. Já me aventurei no desenvolvimento Mobile para um trabalho da faculdade e atualmente estou focando em tecnologias como o Blazor para Desenvolvimento Web. Sempre estou estudando algo novo, porém reforçando o conhecimento que já tenho. No momento estou trabalhando com projetos pessoais para botar em prática meus estudos, enquanto procuro minha primeira oportunidade na área.
+        </p>
+    </section>
+</main>
 
 <footer>
-    <button style="button" @onclick='ScrollToTop'>VOLTAR AO TOPO</button>
+    <button class="top-btn" @onclick='ScrollToTop'>Voltar ao Topo</button>
 </footer>
 
-
-@inject IJSRuntime JS
 @code{
     private async Task ScrollToSection(string sectionId)
     {
@@ -115,7 +87,3 @@
     }
 }
 
-@code {
-    private bool showButton = false;
-    
-}
