@@ -146,8 +146,8 @@ main {
 }
 
 .tecnologias-icons img {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     filter: drop-shadow(0 2px 8px var(--main-purple));
     transition: transform 0.15s;
 }
@@ -158,30 +158,69 @@ main {
 
 .contato-icons {
     display: flex;
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
+}
+
+.contato-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 0 rgba(162,89,255,0.08);
+    transition: box-shadow 0.15s, transform 0.15s, border 0.15s, background 0.15s;
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--main-purple);
+    position: relative;
+    overflow: hidden;
 }
 
 .contato-icons img {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     filter: drop-shadow(0 2px 8px var(--main-purple));
-    transition: transform 0.15s;
+    transition: transform 0.15s, filter 0.15s;
 }
 
-.contato-icons a:hover img {
-    transform: scale(1.18) rotate(8deg);
-    filter: drop-shadow(0 4px 16px var(--main-purple));
+.contato-icons a:hover,
+.contato-icons a:focus {
+    background: var(--main-purple);
+    box-shadow: 0 6px 24px 0 rgba(162,89,255,0.18);
+    transform: scale(1.12) rotate(-5deg);
+    border-color: var(--main-purple-hover);
+}
+
+.contato-icons a:hover img,
+.contato-icons a:focus img {
+    transform: scale(1.13) rotate(-5deg);
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px #fff);
+}
+
+@media (max-width: 700px) {
+    .contato-icons {
+        gap: 1.2rem;
+    }
+    .contato-icons a {
+        width: 44px;
+        height: 44px;
+    }
+    .contato-icons img {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .sobremim-section p {
     color: var(--text);
-    font-size: 1.15rem;
-    line-height: 1.7;
-    margin-top: 0.8rem;
-    letter-spacing: 0.1px;
+    font-size: 1.18rem;
+    line-height: 1.75;
+    margin-top: 1rem;
+    letter-spacing: 0.12px;
 }
 
 footer {
