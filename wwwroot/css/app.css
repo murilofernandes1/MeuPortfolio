@@ -172,7 +172,7 @@ main {
     background: var(--card-bg);
     border-radius: 50%;
     box-shadow: 0 2px 12px 0 rgba(162,89,255,0.08);
-    transition: box-shadow 0.15s, transform 0.15s, border 0.15s, background 0.15s;
+    transition: box-shadow 0.15s, transform 0.15s, border 0.15s;
     width: 56px;
     height: 56px;
     border: 1.5px solid var(--main-purple);
@@ -187,32 +187,16 @@ main {
     transition: transform 0.15s, filter 0.15s;
 }
 
-.contato-icons a:hover,
-.contato-icons a:focus {
+.contato-icons a:hover, .contato-icons a:focus {
     background: var(--main-purple);
     box-shadow: 0 6px 24px 0 rgba(162,89,255,0.18);
-    transform: scale(1.12) rotate(-5deg);
+    transform: scale(1.15) rotate(-6deg);
     border-color: var(--main-purple-hover);
 }
 
-.contato-icons a:hover img,
-.contato-icons a:focus img {
-    transform: scale(1.13) rotate(-5deg);
+.contato-icons a:hover img, .contato-icons a:focus img {
+    transform: scale(1.15) rotate(-6deg);
     filter: brightness(0) invert(1) drop-shadow(0 2px 8px #fff);
-}
-
-@media (max-width: 700px) {
-    .contato-icons {
-        gap: 1.2rem;
-    }
-    .contato-icons a {
-        width: 44px;
-        height: 44px;
-    }
-    .contato-icons img {
-        width: 24px;
-        height: 24px;
-    }
 }
 
 .sobremim-section p {

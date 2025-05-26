@@ -10,11 +10,13 @@
 </header>
 
 <nav class="nav-modern">
-    <button @onclick='() => ScrollToSection("projetos")'>Projetos</button>
-    <button @onclick='() => ScrollToSection("tecnologias")'>Tecnologias</button>
-    <button @onclick='() => ScrollToSection("contato")'>Contato</button>
-    <button @onclick='() => ScrollToSection("sobremim")'>Sobre Mim</button>
+    <button @onclick="@(() => ScrollToSection("projetos"))">Projetos</button>
+    <button @onclick="@(() => ScrollToSection("tecnologias"))">Tecnologias</button>
+    <button @onclick="@(() => ScrollToSection("contato"))">Contato</button>
+    <button @onclick="@(() => ScrollToSection("sobremim"))">Sobre Mim</button>
+
 </nav>
+
 
 <main>
     <section id="projetos" class="modern-section">
@@ -88,6 +90,7 @@
     </section>
 </main>
 
+
 <footer>
     <button class="top-btn" @onclick='ScrollToTop'>Voltar ao Topo</button>
 </footer>
@@ -103,4 +106,3 @@
         await JS.InvokeVoidAsync("window.scrollTo", 0, 0);
     }
 }
-
