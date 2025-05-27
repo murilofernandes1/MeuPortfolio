@@ -1,4 +1,3 @@
-
 :root {
     --main-bg: #111016;
     --main-purple: #a259ff;
@@ -35,6 +34,9 @@ body {
     color: var(--main-purple);
     font-weight: 700;
 }
+.modern-header h1:focus {
+    outline: none;
+}
 
 .subtitle {
     color: var(--subtitle);
@@ -53,6 +55,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
+    flex-wrap: nowrap;
 }
 
 .nav-modern button {
@@ -66,6 +69,7 @@ body {
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border 0.2s;
     outline: none;
+    white-space: nowrap;
 }
 
 .nav-modern button:hover, .nav-modern button:focus {
@@ -121,6 +125,8 @@ main {
     background: #181622;
     border: 1px solid var(--main-purple);
     box-shadow: 0 2px 8px 0 rgba(162,89,255,0.10);
+    max-width: 100%;
+    height: auto;
 }
 
 .projeto h3 {
@@ -242,11 +248,54 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.8rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+        padding: 0.8rem 0.6rem;
+    }
+    .projeto img {
+        max-width: 100%;
+        height: auto;
     }
     .tecnologias-icons {
         gap: 1rem;
     }
     .contato-icons {
         gap: 1.2rem;
+    }
+    .modern-header h1 {
+        font-size: 2rem;
+    }
+    .modern-section h2 {
+        font-size: 1.5rem;
+    }
+    .projeto h3 {
+        font-size: 1.1rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .nav-modern {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .nav-modern button {
+        flex: 1 1 100%;
+        max-width: 300px;
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-header h1 {
+        font-size: 1.6rem;
+    }
+    .modern-section h2 {
+        font-size: 1.2rem;
+    }
+    .nav-modern button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
 }
