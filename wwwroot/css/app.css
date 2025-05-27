@@ -33,9 +33,14 @@ body {
     letter-spacing: 2px;
     color: var(--main-purple);
     font-weight: 700;
-}
-.modern-header h1:focus {
     outline: none;
+}
+
+.modern-header h1:focus,
+.modern-header h1:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .subtitle {
@@ -237,6 +242,7 @@ footer {
     transform: scale(1.07);
 }
 
+/* Responsivo */
 @media (max-width: 700px) {
     main {
         padding: 0 0.5rem 2rem 0.5rem;
