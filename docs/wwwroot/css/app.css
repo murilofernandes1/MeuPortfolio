@@ -1,0 +1,301 @@
+:root {
+    --main-bg: #111016;
+    --main-purple: #a259ff;
+    --main-purple-hover: #7c2fff;
+    --text: #f5f5f7;
+    --subtitle: #bdb7d7;
+    --card-bg: #181622;
+    --border: #2d2840;
+    --button-bg: #1a1625;
+    --button-hover: var(--main-purple);
+    --shadow: 0 4px 24px 0 rgba(162,89,255,0.12);
+}
+
+body {
+    background: var(--main-bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modern-header {
+    text-align: center;
+    padding: 3rem 1rem 1.5rem 1rem;
+    background: var(--card-bg);
+    border-bottom: 2px solid var(--main-purple);
+    box-shadow: var(--shadow);
+}
+
+.modern-header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+    color: var(--main-purple);
+    font-weight: 700;
+}
+.modern-header h1:focus {
+    outline: none;
+}
+
+.subtitle {
+    color: var(--subtitle);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+.nav-modern {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--card-bg);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-wrap: nowrap;
+}
+
+.nav-modern button {
+    background: var(--button-bg);
+    color: var(--main-purple);
+    border: 2px solid var(--main-purple);
+    border-radius: 30px;
+    padding: 0.7rem 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    outline: none;
+    white-space: nowrap;
+}
+
+.nav-modern button:hover, .nav-modern button:focus {
+    background: var(--main-purple);
+    color: #fff;
+    border-color: var(--main-purple-hover);
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.modern-section {
+    background: var(--card-bg);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2rem 1.5rem 2rem;
+    border: 1.5px solid var(--border);
+    transition: box-shadow 0.2s;
+}
+
+.modern-section h2 {
+    color: var(--main-purple);
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #201c2e;
+    border-radius: 14px;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 12px 0 rgba(162,89,255,0.08);
+    border: 1px solid var(--border);
+    transition: transform 0.15s;
+}
+
+.projeto:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 24px 0 rgba(162,89,255,0.18);
+}
+
+.projeto img {
+    border-radius: 10px;
+    background: #181622;
+    border: 1px solid var(--main-purple);
+    box-shadow: 0 2px 8px 0 rgba(162,89,255,0.10);
+    max-width: 100%;
+    height: auto;
+}
+
+.projeto h3 {
+    color: var(--main-purple);
+    margin: 0 0 0.3rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.projeto p {
+    color: var(--subtitle);
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.tecnologias-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.tecnologias-icons img {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0 2px 8px var(--main-purple));
+    transition: transform 0.15s;
+}
+
+.tecnologias-icons img:hover {
+    transform: scale(1.15) rotate(-6deg);
+}
+
+.contato-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contato-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 0 rgba(162,89,255,0.08);
+    transition: box-shadow 0.15s, transform 0.15s, border 0.15s;
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--main-purple);
+    position: relative;
+    overflow: hidden;
+}
+
+.contato-icons img {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 2px 8px var(--main-purple));
+    transition: transform 0.15s, filter 0.15s;
+}
+
+.contato-icons a:hover, .contato-icons a:focus {
+    background: var(--main-purple);
+    box-shadow: 0 6px 24px 0 rgba(162,89,255,0.18);
+    transform: scale(1.15) rotate(-6deg);
+    border-color: var(--main-purple-hover);
+}
+
+.contato-icons a:hover img, .contato-icons a:focus img {
+    transform: scale(1.15) rotate(-6deg);
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px #fff);
+}
+
+.sobremim-section p {
+    color: var(--text);
+    font-size: 1.18rem;
+    line-height: 1.75;
+    margin-top: 1rem;
+    letter-spacing: 0.12px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1.5rem 0;
+    background: transparent;
+}
+
+.top-btn {
+    background: var(--main-purple);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 12px 0 rgba(162,89,255,0.18);
+    transition: background 0.2s, transform 0.15s;
+}
+
+.top-btn:hover, .top-btn:focus {
+    background: var(--main-purple-hover);
+    transform: scale(1.07);
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+    .modern-section {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+    }
+    .projeto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+        padding: 0.8rem 0.6rem;
+    }
+    .projeto img {
+        max-width: 100%;
+        height: auto;
+    }
+    .tecnologias-icons {
+        gap: 1rem;
+    }
+    .contato-icons {
+        gap: 1.2rem;
+    }
+    .modern-header h1 {
+        font-size: 2rem;
+    }
+    .modern-section h2 {
+        font-size: 1.5rem;
+    }
+    .projeto h3 {
+        font-size: 1.1rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .nav-modern {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .nav-modern button {
+        flex: 1 1 100%;
+        max-width: 300px;
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-header h1 {
+        font-size: 1.6rem;
+    }
+    .modern-section h2 {
+        font-size: 1.2rem;
+    }
+    .nav-modern button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
