@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "MeuPortfolio",
   "resources": {
-    "hash": "sha256-heKfjSODkRxubHrqcDg1VYFgPvoV6/he523PzgN7Wj0=",
+    "hash": "sha256-DyLvEy4jRVf4Ao6732PpEMxFpNKwsFZ9UqEqHrsRJ3E=",
     "fingerprinting": {
-      "MeuPortfolio.gth1o83g69.wasm": "MeuPortfolio.wasm",
+      "MeuPortfolio.t5uj7y8arm.wasm": "MeuPortfolio.wasm",
       "Microsoft.AspNetCore.Components.igvcjtdpd9.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.bipktkzgg8.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -62,7 +62,7 @@
       "System.Runtime.InteropServices.JavaScript.83zwdhfd7p.wasm": "sha256-pLr/Ys4hCRUIbnJOTabUttdOQTgaKzJPRmT6/do1uGg="
     },
     "assembly": {
-      "MeuPortfolio.gth1o83g69.wasm": "sha256-dHhIx7gpN9I5i62n5cblDSCc3yWnxUq1AAGL8SOrFfM=",
+      "MeuPortfolio.t5uj7y8arm.wasm": "sha256-cU7FHBb3P+snadAdin3CEZkFJeUL77hzeUzbt9PsDG4=",
       "Microsoft.AspNetCore.Components.igvcjtdpd9.wasm": "sha256-vj4ixg/BpovY94lWQS8ZHX1bdubIPxDmPmtjWDDznV8=",
       "Microsoft.AspNetCore.Components.Web.bipktkzgg8.wasm": "sha256-3QSSs1PU62jhVuJWjQw0YFX5kVXQikkYVHpKT8qpi7E=",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "sha256-Hymk0fViavnVW/gMYu9JN650NQTS5P8zPntoNQH10Xw=",
