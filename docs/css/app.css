@@ -242,7 +242,6 @@ footer {
     transform: scale(1.07);
 }
 
-/* Responsivo */
 @media (max-width: 700px) {
     main {
         padding: 0 0.5rem 2rem 0.5rem;
@@ -291,6 +290,7 @@ footer {
         padding: 0.6rem 1.2rem;
         white-space: normal;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -304,4 +304,5 @@ footer {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
+    
 }
